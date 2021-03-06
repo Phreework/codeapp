@@ -2,7 +2,7 @@
 
 [Node.js](https://nodejs.org/) is a platform for building fast and scalable server applications using JavaScript. Node.js is the runtime and [npm](https://www.npmjs.com/) is the Package Manager for Node.js modules.
 
-With release 1.2.0 (March 2021), Node.js runtime comes preinstalled in Code App with npm support.
+With release 1.2.0 (March 2021), Node.js (12.19.0) runtime comes preinstalled in Code App with npm support.
 
 ## Running your first Node.js application
 
@@ -40,7 +40,9 @@ Open the terminal panel by pressing `⌘J`, or the chevron (</>) icon on the sid
 
 ![image](resources/terminal-node.jpeg)
 
-# Creating an Express application
+---
+
+## Creating an Express application
 
 [Express](https://expressjs.com/) is a popular web application framework for building web apps and APIs. You can install it with the package manager npm.
 
@@ -79,7 +81,9 @@ A express server instance is now running at `localhost:3000`. You can verify thi
 
 To stop the server, you can press `control+c` on the terminal or press the stop button.
 
-# Install Node.js modules globally
+---
+
+## Install Node.js modules globally
 
 You can install extra terminal commands by installing Node.js modules globally. Examples include `typescript` and `prettier`.
 
@@ -89,3 +93,14 @@ npm install {your_module_name} -g
 ```
 
 You can now call the cli commands included in the package from anywhere. For example, `tsc` comes with `typescript` module. It transpiles TypeScript code into Javascript.
+
+---
+
+## Limitations
+
+Due to iOS restrictions, limitations apply when running Node.js or npm in Code App. Most noticibly:
+
+- Depending on your device model, memory available to your Node.js runtime could quite limited. For example, it's around 180MB on iPad 8th generation. This means large modules or npm installation with large amount of dependencies might fail.
+- Modules with native code will not run. You will likely be prompted with EPERM errors.
+- Code that spawn process will not run. For example, `child_process` will never work.
+- Node.js will not run in the background (when the app is dismissed).
