@@ -6,16 +6,23 @@ Bringing desktop-like editing expereince to iPad, available on App Store: https:
 ## About the repository
 This repository does not contain any source code for the app. Instead, we work on issues, listen to your feedback and publish our development plan here.
 
+## Documentation
+[Working with Node.js and npm](documentation/working-with-nodejs.md)
+
+[Working with Git](documentation/working-with-nodejs.md)
+
 ## The Plan
 Use [VS Code](https://github.com/microsoft/vscode) as a design template while providing key functionalities with native code:
 - Version Control (Git clone, commits, diff editor, push, pull and merge) ✅
 - Embeded terminal (70+ Linux commands avaliable) ✅
+- Local web development environment (Node) ✅
+- [LSP](https://microsoft.github.io/language-server-protocol) support 🏃 (Partial)
 - Built in Python runtime 🏃
 - C/C++ Runtime with Emscripten (WebAssembly) 🏃
-- Local web development environment (Node) 🏃
-- [LSP](https://microsoft.github.io/language-server-protocol) support 🏃
 
 ## What we've achieved
+- Node.js runtime + npm
+- ![Screenshot](documentation/resources/express+safari.jpeg)
 - Monaco Editor integration, with Intellisence for HTML, Javascript, JSON, TypeScript<br/>
 ![Screenshot](screenshots/IMG_0059.PNG)
 - Support for Version Control (Git clone, commits, diff editor, push, merge (partial), and pull)<br/>
