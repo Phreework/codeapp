@@ -100,7 +100,7 @@ You can now call the cli commands included in the package from anywhere. For exa
 
 Due to iOS restrictions, limitations apply when running Node.js or npm in Code App. Most noticibly:
 
-- Depending on your device model, memory available to your Node.js runtime could quite limited. For example, it's around 180MB on iPad 8th generation. This means large modules or npm installation with large amount of dependencies might fail.
+- Depending on your device model, memory available to your Node.js runtime could be quite limited. For example, it's around 180MB on iPad 8th generation. This means large modules or npm installation with large amount of dependencies might fail.
 - Modules with native code will not run. You will likely be prompted with EPERM errors.
 - Code that spawn process will not run. For example, `child_process` will never work.
 - Node.js will not run in the background (when the app is dismissed).
