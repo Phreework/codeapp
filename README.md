@@ -9,7 +9,7 @@ This repository does not contain any source code for the app. Instead, we work o
 ## Documentation
 [Working with Node.js and npm](documentation/working-with-nodejs.md)
 
-[Working with Git](documentation/working-with-nodejs.md)
+[Working with Git](documentation/working-with-version-control.md)
 
 ## The Plan
 Use [VS Code](https://github.com/microsoft/vscode) as a design template while providing key functionalities with native code:
@@ -22,7 +22,7 @@ Use [VS Code](https://github.com/microsoft/vscode) as a design template while pr
 
 ## What we've achieved
 - Node.js runtime + npm
-- ![Screenshot](documentation/resources/express+safari.jpeg)
+![Screenshot](documentation/resources/express+safari.jpeg)
 - Monaco Editor integration, with Intellisence for HTML, Javascript, JSON, TypeScript<br/>
 ![Screenshot](screenshots/IMG_0059.PNG)
 - Support for Version Control (Git clone, commits, diff editor, push, merge (partial), and pull)<br/>
